@@ -1,0 +1,14 @@
+/**
+ *
+ * author: eduardo.r.oliveira@oracle.com
+ *
+ * Version: beta.001
+ *
+ * This package contains the Oracle DBCS API classes and also a test helper class, including its source code to ease the usage.
+ * You can see the documents/DBCSCloudAdminSampleUsage.java code in order to understand how to use the Oracle DBCS API.
+ * The java api documentation is in the documents folder also.
+ *
+ */ 
+ 
+
+java -cp DBCSCloudAdmin.jar -Dusername=cloudUser@company.com -Dpassword=cloudPassword -Didentity-domain=identityDomainName -Dstorage-container=Storage-identityDomainName -Dstorage-user=cloudStorageUser@company.com -Dstorage-password=cloudStoragePassword -Dssh-key=publicSshKeyAsText DBCSCloudAdminSampleUsage service-name=serviceName 				action=[list-services|create-service|create-vi-service|delete-service|read-service|scale-up|stop-service|start-service]
